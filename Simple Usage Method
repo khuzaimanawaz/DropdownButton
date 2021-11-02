@@ -1,5 +1,7 @@
-DropdownButton(
-                  value: 'BTC', //Start out Value
+
+DropdownButton(                
+                              //(String selectedCurrency) create on uper override
+                  value: selectedCurrency, //Start out Value 
                   items: [
                     //It's take two widgetsin DropdownMenueItem. This is (Child = Text & value=That printes in console)
                     DropdownMenuItem(
@@ -16,5 +18,7 @@ DropdownButton(
                     ),
                   ],
                   onChanged: (value) {
-                    print(value);
+                    setState(() {
+                      selectedCurrency = value;
+                    });
                   })),
