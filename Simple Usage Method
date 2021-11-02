@@ -1,0 +1,20 @@
+DropdownButton(
+                  value: 'BTC', //Start out Value
+                  items: [
+                    //It's take two widgetsin DropdownMenueItem. This is (Child = Text & value=That printes in console)
+                    DropdownMenuItem(
+                      child: Text('BTC'),
+                      value: 'BTC',
+                    ),
+                    DropdownMenuItem(
+                      child: Text('ETH'),
+                      value: 'ETH',
+                    ),
+                    DropdownMenuItem(
+                      child: Text('LTC'),
+                      value: 'LTC',
+                    ),
+                  ],
+                  onChanged: (value) {
+                    print(value);
+                  })),
