@@ -1,0 +1,13 @@
+DropdownButton( 
+                                (create uper on @overwride)
+                  value: selectedCurrency, //Start out Value
+                  items: currenciesList.map((items) {
+                    return DropdownMenuItem(value: items, child: Text('items'));
+                  }).toList(),currenciesList.map((items) {
+                    return DropdownMenuItem(value: items, child: Text('items'));
+                  }).toList(),
+                  onChanged: (value) {
+                    setState(() {
+                      selectedCurrency = value;
+                    });
+                  }),
