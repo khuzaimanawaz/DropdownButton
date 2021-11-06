@@ -1,6 +1,6 @@
 
 DropdownButton(                
-                              //(String selectedCurrency = 'BTC';) create on uper override
+                              //(String selectedCurrency = 'BTC';) create on uper override... (must be available in list that you xall in dropdown button)
                   value: selectedCurrency, //Start out Value 
                   items: [
                     //It's take two widgetsin DropdownMenueItem. This is (Child = Text & value=That printes in console)
